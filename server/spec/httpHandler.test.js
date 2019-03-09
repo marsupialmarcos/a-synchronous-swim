@@ -22,13 +22,18 @@ describe('server responses', () => {
   
   it('should respond to a GET request for a swim command', (done) => {
     let {req, res} = server.mock('/', 'GET');
+
+    //THIS ONLY WORKS BECAUSE OF MOCK
+
+    // create an array of l,r,u,d so that 
+    var correctCommands = ["left", "right", "up", "down"]
     
+    // .includes
+
     httpHandler.router(req, res);
     expect(res._responseCode).to.equal(200); // we expect to receive 200 from getting response code
     expect(res._ended).to.equal(true);       // we 
-    expect(res._data.toString()).to.be.empty; // the response data should be empty (we should get no data from the server)
-    // expect(res._data.toString()).to.equal('left' || 'right' || 'up' || 'down'); // the response data should be empty (we should get no data from the server)
-  
+    expect(correctCommands).to.include(res._data.toString());
     // write your test here
     // make sure the server can issue a **random command** using a **get request**
     // what things must we check to know a server has ...
