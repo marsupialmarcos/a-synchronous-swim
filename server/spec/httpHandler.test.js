@@ -13,15 +13,32 @@ describe('server responses', () => {
     let {req, res} = server.mock('/', 'OPTIONS');
 
     httpHandler.router(req, res);
-    expect(res._responseCode).to.equal(200);
-    expect(res._ended).to.equal(true);
-    expect(res._data.toString()).to.be.empty;
-
+    expect(res._responseCode).to.equal(200); // we expect to receive 200 from getting response code
+    expect(res._ended).to.equal(true);       // we 
+    expect(res._data.toString()).to.be.empty; // the response data should be empty (we should get no data from the server)
+    
     done();
   });
-
+  
   it('should respond to a GET request for a swim command', (done) => {
+    let {req, res} = server.mock('/', 'GET');
+    
+    httpHandler.router(req, res);
+    expect(res._responseCode).to.equal(200); // we expect to receive 200 from getting response code
+    expect(res._ended).to.equal(true);       // we 
+    expect(res._data.toString()).to.be.empty; // the response data should be empty (we should get no data from the server)
+    // expect(res._data.toString()).to.equal('left' || 'right' || 'up' || 'down'); // the response data should be empty (we should get no data from the server)
+  
     // write your test here
+    // make sure the server can issue a **random command** using a **get request**
+    // what things must we check to know a server has ...
+      //1. issued a random command
+      //2. sent out a get request
+      //note: this means we'll be sending out an ajax GET request somewhere from server to client
+      //   this request will specify a random command
+    // should we 
+    // should we get data from the server?
+
     done();
   });
 
