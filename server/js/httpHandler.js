@@ -17,21 +17,20 @@ module.exports.router = (req, res, next = ()=>{}) => {  // note: next is never r
   console.log('Serving request type ' + req.method + ' for url ' + req.url);
   //prints out the request type/method, and url it came from
 
-  if (req.method === "GET"){              ///"GET, POST, PUT, DELETE, OPTIONS"
+  if (req.method === "GET") {              ///"GET, POST, PUT, DELETE, OPTIONS"
+    res.writeHead(200, headers);
     var correctCommands = ["up", "down","left", "right"]  
     var randomIndex = Math.floor(Math.random() * correctCommands.length)
     var command = correctCommands[randomIndex]; //random left,right,up,down
-
     res.write(command);
     res.end();
   }
 
-  if (req.method === 'OPTIONS') {
+  // if (req.method === 'OPTIONS') {
     
-  }
-  res.writeHead(200, headers);
-  //router directs traffic, looks like a status code and maybe some kind of headers response?
-  res.end();
+  //   //router directs traffic, looks like a status code and maybe some kind of headers response?
+  //   res.end();
+  // }
   //end response?
 };
 
