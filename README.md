@@ -5,14 +5,14 @@ This is a project I completed as a student at [hackreactor](http://hackreactor.c
 
 Your synchronized swim team is ready to take commands from you! Right now, they can only hear your commands when issued from within the client. They'll be a better team if they can receive your commands when you are away from the client too. Your goal is to make both the server program and client program coordinate the activities of the swim team.
 
-# Goals
+## Goals
 
 * Learn how to work with two different programs and get them to coordinate with each other
 * Gain more experience with asynchronous behaviors through the use of keyboard events and network events
 * Achieve a deeper understanding of how client and server systems interact with each other through CORS, uploading of files, requests, and responses.
 * Learn to write tests, use binary data, buffers, as well as reading and writing files to the hard drive.
 
-**Repo and Program Structure**
+### Repo and Program Structure
 
 This repo contains two programs -- one that lives in the client folder and one that lives in the server folder. Both programs are started from the terminal so you'll need two terminal windows to run these programs. Each program has its own package.json file and must have its dependencies installed separately. The two programs are currently not connected in any way, but both can do interesting things.
 
@@ -20,7 +20,7 @@ The client program displays the swim team and their movements. It can accept com
 
 The server program can accept directional commands from the keyboard using the arrow keys, or by typing the command out in full ("up"/"down"/"left"/"right") and pressing enter. When a valid command is received, the command is displayed on the screen and all others are ignored.
 
-**Starting the programs**
+### Starting the programs
 
 Both programs can be started with npm start in development mode. This runs the client using live-server so that code changes automatically refresh the browser. The server runs using nodemon, so that code changes cause automatic reloads.
 
@@ -59,7 +59,7 @@ Improve the performance of your file operations by using read and write streams.
 * Turn this into a multi-player experience, where each swimmer can connect to a server and receive independent server commands.
 * Deploy to Digital Ocean.
 
-# Relevant Documentation
+## Relevant Documentation
 * [Intro to Node.js](https://nodejs.dev/)
 * [Error First Callback Pattern](http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/)
 * [Jest testing framework](https://jestjs.io/docs/en/getting-started)
