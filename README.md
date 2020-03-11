@@ -5,7 +5,7 @@ This is a project I completed as a student at [hackreactor](http://hackreactor.c
 
 Your synchronized swim team is ready to take commands from you! Right now, they can only hear your commands when issued from within the client. They'll be a better team if they can receive your commands when you are away from the client too. Your goal is to make both the server program and client program coordinate the activities of the swim team.
 
-**Goals**
+# Goals
 
 * Learn how to work with two different programs and get them to coordinate with each other
 * Gain more experience with asynchronous behaviors through the use of keyboard events and network events
@@ -59,7 +59,7 @@ Improve the performance of your file operations by using read and write streams.
 * Turn this into a multi-player experience, where each swimmer can connect to a server and receive independent server commands.
 * Deploy to Digital Ocean.
 
-**Relevant Documentation**
+# Relevant Documentation
 * [Intro to Node.js](https://nodejs.dev/)
 * [Error First Callback Pattern](http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/)
 * [Jest testing framework](https://jestjs.io/docs/en/getting-started)
