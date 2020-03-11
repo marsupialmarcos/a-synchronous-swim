@@ -44,7 +44,7 @@ All swim commands are in the form of the strings: 'up' 'down' 'left' 'right'. Sw
   * Add a form to your client page with a file picker and a submit button.
   * Add an event handler that will take the selected file and upload it to POST API of your server using AJAX. Carefully follow the instructions in the blog post listed below. You will need to make changes to your API as you contend with the nuances of this exercise. Be sure to refactor your tests as needed, keeping both your tests suite and in top working order.
 
-**Advanced Content**
+# Advanced Content
 
 * Support another image format besides JPEG, such as PNG.
 Improve the performance of your file operations by using read and write streams.
@@ -53,7 +53,7 @@ Improve the performance of your file operations by using read and write streams.
 * Add the ability to issue higher-level commands, such that the swim team can execute complex sequences instead of individual moves.
 * Replace the AJAX with Web Sockets. Web Sockets improve efficiency in client-server communication, because the connection stays open indefinitely, allow many commands to be sent from the server to the client. Don't forget to handle re-connections.
 
-**Nightmare Mode***
+# Nightmare Mode
 
 * Refactor the swim team to make use of D3 animations and transitions, so the swimmers look is more life-like.
 * Turn this into a multi-player experience, where each swimmer can connect to a server and receive independent server commands.
